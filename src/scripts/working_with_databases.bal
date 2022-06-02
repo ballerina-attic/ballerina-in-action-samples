@@ -33,7 +33,7 @@ service / on new http:Listener(8080) {
     resource function get albums/[string id]() returns Album|http:NotFound|error {
         Album|sql:Error result = self.db->queryRow(`SELECT * FROM Albums WHERE id = ${id}`);
         if result is sql:NoRowsError {
-            return <http:NotFound>{};
+            return http:NOT_FOUND;
         } else {
             return result;
         }
