@@ -1,4 +1,4 @@
-name: CI
+name: Ballerina build on PR and Merge
 
 on:
   push:
