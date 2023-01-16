@@ -20,7 +20,7 @@ jobs:
           args: 
             grpc 
             --input 
-            modules/grpc_api/grpc_api.proto 
+            modules/grpc_api/descriptor_record_store.proto
             --output 
             modules/grpc_api/
       - name: Ballerina Build

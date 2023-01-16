@@ -9,7 +9,7 @@ Album[] albums = [
 ];
 
 @grpc:Descriptor {
-    value: GRPC_API_DESC
+    value: DESCRIPTOR_RECORD_STORE_DESC
 }
 service "Albums" on new grpc:Listener(port) {
     remote function getAlbum(string id) returns Album|error {
