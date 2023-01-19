@@ -28,7 +28,7 @@ jobs:
         uses: ballerina-platform/ballerina-action@master
         with:
           args: 
-            grpc --input ./modules/grpc_api/descriptor_record_store.proto --output ./modules/grpc_api/
+            grpc --input ./grpc_api/descriptor_record_store.proto --output ./grpc_api/
       - name: Build GRPC API Package
         uses: ballerina-platform/ballerina-action@master
         with:
