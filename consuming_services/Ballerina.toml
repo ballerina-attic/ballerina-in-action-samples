@@ -1,5 +1,5 @@
 [package]
-org = "tharik"
+org = "ballerina"
 name = "consuming_services"
 version = "0.1.0"
 distribution = "2201.3.0"
