@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'src/scripts/working_with_databases.bal'
+      - 'working_with_databases/working_with_databases.bal'
 
 jobs:
   build:
