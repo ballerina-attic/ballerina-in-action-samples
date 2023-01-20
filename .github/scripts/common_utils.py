@@ -16,7 +16,7 @@ def update_md(bal_file_location, md_file, sample_name, sample_title):
         updated_bal_file = action_obj.read()
     with open(md_file, 'a') as write_obj:
         write_obj.write("```\n")
-        write_obj.write(updated_bal_file + "\n")
+        write_obj.write(updated_bal_file)
         write_obj.write("```")
         write_obj.close()
     action_obj.close()
