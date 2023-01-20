@@ -1,4 +1,4 @@
-name: Update ballerina-dev-website repo
+name: Update ballerina-dev-website repo -  Working with databases
 
 on:
   push:

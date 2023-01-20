@@ -1,4 +1,4 @@
-name: Update ballerina-dev-website repo
+name: Update ballerina-dev-website repo - gRPC API
 
 on:
   push:

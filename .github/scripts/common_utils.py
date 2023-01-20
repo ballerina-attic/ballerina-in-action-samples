@@ -8,7 +8,6 @@ ballerina_bot_username = os.environ['BALLERINA_BOT_USERNAME']
 ballerina_bot_token = os.environ['BALLERINA_BOT_TOKEN']
 ballerina_bot_email = os.environ['BALLERINA_BOT_EMAIL']
 ballerina_reviewer_bot_token = os.environ['BALLERINA_REVIEWER_BOT_TOKEN']
-
 github = Github(ballerina_bot_token)
 
 
@@ -41,7 +40,6 @@ def update_md(bal_file_location, md_file, sample_name, sample_title):
         print('Error occurred while committing changes to ballerina-dev-website', e)
 
 
-# send a pull request
 def open_pull_request(title, body, head_branch):
     try:
         repo = github.get_repo('ballerina-platform/ballerina-dev-website')
@@ -63,8 +61,6 @@ def open_pull_request(title, body, head_branch):
 
     except Exception as e:
         raise e
-
-# commit the changes
 
 
 def commit_file(file_path, updated_file_content, commit_branch, commit_message):
