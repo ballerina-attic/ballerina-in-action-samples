@@ -13,7 +13,7 @@ type Album record {|
     string id;
     string title;
     string artist;
-    decimal price;
+    float price;
 |};
 
 service / on new http:Listener(8080) {
@@ -25,7 +25,8 @@ service / on new http:Listener(8080) {
 
     resource function get albums() returns Album[]|error {
         stream<Album, sql:Error?> albumStream = self.db->query(`SELECT * FROM Albums`);
-        return check from Album album in albumStream select album;
+        return from Album album in albumStream
+            select album;
     }
 
     resource function get albums/[string id]() returns Album|http:NotFound|error {
