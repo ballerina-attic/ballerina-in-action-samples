@@ -1,2 +1,2 @@
-# ballerina-in-action-samples
+# [DEPRICATED] ballerina-in-action-samples
 Ballerina in actions
